@@ -16,7 +16,7 @@ function receiveBillValue() {
 let numberOfPeopleInput = document.querySelector("#people")
 numberOfPeopleInput.addEventListener("input", receiveNumberOfPeople)
 
-function receiveNumberOfPeople(){
+function receiveNumberOfPeople() {
     numberOfPeople = numberOfPeopleInput.valueAsNumber
     calculate()
 }
@@ -56,8 +56,12 @@ function calculate() {
     
         let totalStrong = document.querySelector (".total strong")
         let total = (bill / number0fPeople) + tipAmountPerson
-        totalStrong.innerText = `$ ${total. toFixed(2)}`
+        totalStrong.innerText = `$ ${total.toFixed(2)}`
      } else {
         console.log("ainda não é possivel calcular")
     }
+}
+
+function reset() {
+    
 }
